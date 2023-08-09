@@ -1,0 +1,9 @@
+.wrapper {
+  width: $full-width;
+  max-width: 75rem;
+  margin: 0 auto;
+  
+  &--half {
+    max-width: 50%;
+  }
+}

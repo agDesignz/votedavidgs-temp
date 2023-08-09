@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+
+  @mixin bp-md {
+    font-size: 56.25%;
+  }
+
+  @mixin bp-lg {
+    font-size: 62.5%;
+  }
+}
+
+/* body {} */
+
+figure {
+  min-width: 0;
+  min-height: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+body.stop-scroll {
+  overflow-y: hidden;
+}

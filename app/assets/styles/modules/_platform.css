@@ -1,0 +1,29 @@
+.platform {
+  display: grid;
+  padding: $padding-sm;
+  justify-content: center;
+  height: 100%;
+  gap: 2.5rem;
+  color: #fff;
+
+  &__item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  &__icon {
+    font-size: 3rem;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__subheading {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
