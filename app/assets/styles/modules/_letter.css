@@ -1,0 +1,22 @@
+.letter {
+  padding: $padding-md;
+  display: grid;
+  gap: $gap-xs;
+  width: 95%;
+  max-width: 74rem;
+  margin: 0 auto;
+
+  @mixin bp-md {
+    padding: $padding-lg;
+    gap: $gap-sm;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    color: $color-secondary;
+  }
+
+  &__paragraph {
+    color: #474747;
+  }
+}
