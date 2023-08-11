@@ -66,7 +66,7 @@ let config = {
 if (currentTask == 'start') {
   cssConfig.use.unshift('style-loader');
   config.output = {
-    filename: 'bundled.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'app')
   };
   config.devServer = {

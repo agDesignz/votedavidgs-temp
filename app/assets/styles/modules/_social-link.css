@@ -1,0 +1,16 @@
+.social-link {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: .5rem;
+  grid-template-columns: auto auto;
+
+  &__icon {
+    fill: $color-white;
+    font-size: 3rem;
+  }
+
+  &__heading {
+    color: $color-primary;
+  }
+}

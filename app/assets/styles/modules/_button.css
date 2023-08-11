@@ -1,0 +1,64 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    position: relative;
+    box-shadow: $shadow-medium;
+    font-weight: 500;
+    transition: all .24s ease-out;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: $shadow-heavy;
+  }
+
+  &:active {
+    transform: scale(1) translateY(0.2rem);
+  }
+
+  &--stretch {
+    justify-self: stretch;
+  }
+
+  &--green {
+    border: 1px solid $color-secondary;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+
+  &--white {
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+
+  &--purple {
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--large {
+
+    &,
+    &:link,
+    &:visited {
+      @mixin bp-sm {
+        font-size: 2.6rem;
+      }
+
+      @mixin bp-md {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+}

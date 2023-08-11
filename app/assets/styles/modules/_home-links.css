@@ -1,0 +1,11 @@
+.home-links {
+  width: 80%;
+  max-width: 45rem;
+  margin: auto;
+  display: grid;
+  gap: $gap-xs;
+
+  @mixin bp-sm {
+    gap: $gap-sm;
+  }
+}

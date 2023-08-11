@@ -1,15 +1,30 @@
 .temporary {
-  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
-  &__info {
+  &__top {
+
+  }
+
+  &__central-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: $temp-gap-sm;
+    gap: $gap-xs;
     padding: $padding-sm;
+
+    @mixin bp-sm {
+      gap: $gap-sm;
+    }
+    @mixin bp-md {
+      gap: $gap-md;
+      padding: $padding-md;
+    }
+    @mixin bp-sm {
+      gap: $gap-sm;
+      padding: $padding-lg;
+    }
   }
 
   &__name {
@@ -20,11 +35,19 @@
     line-height: 1.2;
   
     &--large {
-      font-size: 4rem;
+      font-size: 8rem;
+
+      @mixin bp-sm {
+        font-size: 10rem;
+      }
     }
   
     &--small {
-      font-size: 3.2rem;
+      font-size: 4.2rem;
+
+      @mixin bp-sm {
+        font-size: 5rem;
+      }
     }
   }
 
@@ -54,9 +77,24 @@
 
 
   &__bottom {
-    flex: 1;
+    /* flex: 1; */
     background: $color-primary;
     display: flex;
+  }
+
+  &__letter {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    @mixin bp-sm {
+      display: flex;
+      padding: 4rem 0;
+    }
+
+    figure {
+      max-width: 74rem;
+    }
   }
 
 }

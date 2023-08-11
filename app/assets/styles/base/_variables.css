@@ -1,12 +1,22 @@
 $color-primary: #4b3678;
 $color-secondary: #2a6d49;
+$color-white: #fff;
 
 $full-width: 92%;
+
+$shadow-light: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+$shadow-medium: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$shadow-heavy: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 
 $font-primary: 'Montserrat', sans-serif;
 $font-secondary: 'Lato', sans-serif;
 
-$temp-gap-sm: 1rem;
+$gap-lg: 6rem;
+$gap-md: 4rem;
+$gap-sm: 2.5rem;
+$gap-xs: 1.2rem;
 
 $padding-sm: 2rem 2.5rem;
+$padding-md: 4rem 2.5rem;
+$padding-lg: 6rem 2.5rem;
